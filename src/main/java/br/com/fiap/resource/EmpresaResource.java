@@ -29,7 +29,7 @@ public class EmpresaResource {
             response = Response.ok(); // 200 (OK)
             response.entity(resultado);
         } else {
-            response = Response.status(Response.Status.UNAUTHORIZED); // 401 (Igual ao seu exemplo)
+            response = Response.status(Response.Status.UNAUTHORIZED); // 401 (Não autorizado)
             response.entity("Login ou senha inválidos.");
         }
 
